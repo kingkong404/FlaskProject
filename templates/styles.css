@@ -1,0 +1,15 @@
+body{
+	background: #7f8c8d;
+}
+
+#response {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+}
+#response a {
+   display: block;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>GitHubby Hub</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>GitHubby Hub</h1>
+        <p class="lead">{{ quote }}</p>
+    </div>
+
+        <input type="text"  placeholder = 'Search'>
+
+
+        <ul id="response">
+        {% for user in response %}
+            <li><img src="{{user.avatar_url}}" alt="{{user.login}}"> <a class = 'btn btn-primary' href="{{ user.html_url}}"> {{ user.login }} &raquo;<a/></li>
+        {% endfor %}
+        </ul>
+
+     <div class="footer">
+        <p>&copy; Steven James 2013</p>
+      </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+	background-color: #7f8c8d;
+
+}
+
+img{
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+ul{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#response {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+}
+#response a {
+   display: block;
+}
